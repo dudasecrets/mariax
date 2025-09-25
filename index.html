@@ -1,128 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Maria Eduarda</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maria Eduarda</title>
 
-<!-- Fonte -->
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Fonte parecida com a do exemplo -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
 
-<style>
-  :root{
-    --bg: #000000;
-    --purple-1: #7a00ff;
-    --purple-2: #b266ff;
-    --muted: #bdbfc3;
-    --white: #ffffff;
-    --card: linear-gradient(180deg, var(--purple-1), var(--purple-2));
-  }
-  body{
-    margin:0;
-    font-family: 'Poppins', sans-serif;
-    background:var(--bg);
-    color:var(--white);
-  }
-  .wrap{
-    max-width:540px;
-    margin:32px auto;
-    padding:20px;
-    display:flex;
-    flex-direction:column;
-    gap:18px;
-    align-items:center;
-  }
-  .brand{
-    text-align:center;
-  }
-  .brand .name{
-    font-family:'Montserrat',sans-serif;
-    font-size:38px;
-    font-weight:700;
-    margin:0;
-    color:var(--white);
-  }
-  .brand .name .last{color:var(--purple-1);}
-  .subtitle{
-    margin-top:8px;
-    font-size:14px;
-    color:var(--muted);
-  }
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000; /* fundo preto */
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
 
-  .cta-box{
-    width:100%;
-    background:var(--card);
-    border-radius:18px;
-    padding:22px;
-    box-shadow:0 30px 80px rgba(122,0,255,0.12);
-    display:flex;
-    flex-direction:column;
-    gap:14px;
-    align-items:center;
-  }
-  .cta-btn{
-    width:100%;
-    max-width:420px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:10px;
-    padding:14px 18px;
-    border-radius:12px;
-    font-weight:700;
-    font-size:16px;
-    text-decoration:none;
-    color:var(--white);
-    transition:.18s;
-    box-shadow:0 10px 30px rgba(0,0,0,0.25);
-  }
-  .cta-btn svg{width:20px;height:20px;fill:currentColor}
-  .btn-vip{background:linear-gradient(90deg,#9a2bff,#c88bff);}
-  .btn-free{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);}
-  .btn-site{background:linear-gradient(90deg,#ff77ce,#ff66b2);}
-  .cta-btn:hover{transform:scale(1.03);box-shadow:0 20px 50px rgba(0,0,0,0.35);}
+    h1 {
+      font-size: 38px;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
 
-  footer{
-    margin-top:12px;
-    text-align:center;
-    font-size:13px;
-    color:var(--muted);
-    padding:18px 10px 36px;
-  }
-</style>
+    /* Caixa roxa dos botões */
+    .button-box {
+      background: #6a0dad;
+      padding: 20px;
+      border-radius: 16px;
+      max-width: 320px;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      box-shadow: 0 8px 24px rgba(106, 13, 173, 0.4);
+    }
+
+    .btn {
+      background: #fff;
+      color: #6a0dad;
+      padding: 14px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 16px;
+      text-decoration: none;
+      transition: 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .btn:hover {
+      background: #6a0dad;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    footer span {
+      font-weight: 600;
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
 
-<div class="wrap">
-  <header class="brand">
-    <h1 class="name">Maria <span class="last">Eduarda</span></h1>
-    <div class="subtitle">Conteúdo exclusivo. Entre e descubra.</div>
-  </header>
+  <h1>Maria Eduarda</h1>
 
-  <div class="cta-box">
-    <a class="cta-btn btn-vip" href="https://t.me/dudinhaavipsbot" target="_blank">
-      <!-- Ícone Telegram -->
-      <svg viewBox="0 0 24 24"><path d="M21.94 2.32a1.7 1.7 0 0 0-1.73-.27L2.5 9.48a1.72 1.72 0 0 0 .09 3.24l4.92 1.64 2.07 6.65a1.7 1.7 0 0 0 2.73.8l3.11-2.87 4.74 3.58c.29.22.65.33 1.01.33.2 0 .41-.04.6-.12.53-.23.9-.72.98-1.3l2.03-16.01a1.7 1.7 0 0 0-.55-1.41z"/></svg>
-      Telegram VIP
-    </a>
-
-    <a class="cta-btn btn-free" href="https://t.me/dudamariax" target="_blank">
-      <!-- Ícone Telegram -->
-      <svg viewBox="0 0 24 24"><path d="M21.94 2.32a1.7 1.7 0 0 0-1.73-.27L2.5 9.48a1.72 1.72 0 0 0 .09 3.24l4.92 1.64 2.07 6.65a1.7 1.7 0 0 0 2.73.8l3.11-2.87 4.74 3.58c.29.22.65.33 1.01.33.2 0 .41-.04.6-.12.53-.23.9-.72.98-1.3l2.03-16.01a1.7 1.7 0 0 0-.55-1.41z"/></svg>
-      Grupo Grátis
-    </a>
-
-    <a class="cta-btn btn-site" href="https://dudasecrets.github.io/Maria-Eduarda-VIP/" target="_blank">
-      <!-- Ícone Globo -->
-      <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm7.93 6h-3.17a15.6 15.6 0 0 0-1.23-3.56A8.04 8.04 0 0 1 19.93 8zM12 4c.83 1.25 1.48 2.73 1.9 4H10.1C10.52 6.73 11.17 5.25 12 4zm-3.53.44A15.6 15.6 0 0 0 7.24 8H4.07a8.04 8.04 0 0 1 4.4-3.56zM4.07 16h3.17c.28 1.25.7 2.45 1.23 3.56A8.04 8.04 0 0 1 4.07 16zm7.93 4c-.83-1.25-1.48-2.73-1.9-4h3.8c-.42 1.27-1.07 2.75-1.9 4zm3.53-.44c.53-1.11.95-2.31 1.23-3.56h3.17a8.04 8.04 0 0 1-4.4 3.56zM8.5 14c-.08-.65-.12-1.32-.12-2s.04-1.35.12-2h7c.08.65.12 1.32.12 2s-.04 1.35-.12 2h-7z"/></svg>
-      Website Oficial
-    </a>
+  <div class="button-box">
+    <a href="https://t.me/dudinhaavipsbot" target="_blank" class="btn">🚀 Entrar no VIP</a>
+    <a href="https://t.me/dudamariax" target="_blank" class="btn">👀 Grupo de Prévia</a>
+    <a href="https://dudasecrets.github.io/Maria-Eduarda-VIP/" target="_blank" class="btn">🌐 Website Oficial</a>
   </div>
-</div>
 
-<footer>
-  Maria Eduarda © 2025 — Todos os direitos reservados
-</footer>
+  <footer>
+    <span>Maria Eduarda</span> © 2025 — Todos os direitos reservados
+  </footer>
 
 </body>
 </html>
