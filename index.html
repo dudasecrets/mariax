@@ -5,99 +5,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maria Eduarda</title>
 
-  <!-- Fonte bonita parecida com a da Aline -->
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 
   <style>
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: #ffffff;
-      color: #222;
+      background: #000;
+      color: #fff;
       text-align: center;
     }
 
     .container {
-      max-width: 420px;
+      max-width: 900px;
       margin: 0 auto;
       padding: 40px 20px;
+      border: 4px solid #8a2be2; /* quadrado roxo */
+      border-radius: 20px;
     }
 
     h1 {
-      font-family: 'Pacifico', cursive;
-      font-size: 34px;
-      color: #7a00ff; /* roxo */
-      margin-bottom: 28px;
+      font-size: 42px;
+      margin-bottom: 20px;
     }
 
-    .links {
-      background: #f8eaff; /* fundo suave roxo */
-      padding: 30px 20px;
-      border-radius: 22px;
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
-    }
-
-    a.btn {
-      display: block;
-      padding: 14px 20px;
-      border-radius: 12px;
-      font-weight: 600;
-      text-decoration: none;
-      font-size: 16px;
-      transition: all 0.25s ease;
-    }
-
-    /* Botões */
-    .vip {
-      background: linear-gradient(90deg, #7a00ff, #b266ff);
-      color: #fff;
-    }
-    .vip:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 15px rgba(122, 0, 255, 0.5);
-    }
-
-    .gratis {
+    h1 span:first-child {
+      color: #000;
       background: #fff;
-      border: 2px solid #7a00ff;
-      color: #7a00ff;
-    }
-    .gratis:hover {
-      background: #7a00ff;
-      color: #fff;
+      padding: 5px 15px;
+      border-radius: 10px;
+      margin-right: 8px;
     }
 
-    .site {
-      background: #ff66cc;
-      color: #fff;
+    h1 span:last-child {
+      color: #8a2be2; /* roxo */
     }
-    .site:hover {
+
+    .btn {
+      display: block;
+      margin: 20px auto;
+      padding: 14px 20px;
+      width: 280px;
+      font-size: 18px;
+      font-weight: 700;
+      border-radius: 12px;
+      text-decoration: none;
+      color: #fff;
+      background: linear-gradient(90deg, #6a0dad, #8a2be2);
+      box-shadow: 0 8px 20px rgba(138,43,226,0.4);
+      transition: transform .3s ease;
+    }
+
+    .btn:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 15px rgba(255, 102, 204, 0.5);
     }
 
     footer {
-      margin-top: 24px;
-      font-size: 13px;
-      color: #777;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
+
   <div class="container">
-    <h1>Maria Eduarda</h1>
+    <h1>
+      <span>Maria</span> 
+      <span>Eduarda</span>
+    </h1>
 
-    <div class="links">
-      <a href="https://t.me/dudinhaavipsbot" target="_blank" class="btn vip">💎 Telegram VIP</a>
-      <a href="https://t.me/dudamariax" target="_blank" class="btn gratis">📲 Telegram GRÁTIS</a>
-      <a href="https://dudasecrets.github.io/Maria-Eduarda-VIP/" target="_blank" class="btn site">❤️ Website Oficial</a>
-    </div>
-
-    <footer>
-      © 2025 Maria Eduarda — Todos os direitos reservados
-    </footer>
+    <a href="https://t.me/dudinhaavipsbot" class="btn" target="_blank">💎 Telegram VIP</a>
+    <a href="https://t.me/dudamariax" class="btn" target="_blank">🎥 Grupo Grátis</a>
+    <a href="https://dudasecrets.github.io/Maria-Eduarda-VIP/" class="btn" target="_blank">🌐 Website Oficial</a>
   </div>
+
+  <footer>
+    Maria Eduarda © 2025 — Todos os direitos reservados
+  </footer>
+
 </body>
 </html>
