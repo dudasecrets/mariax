@@ -1,92 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Maria Eduarda</title>
-
-  <!-- Fonte mais fina e elegante -->
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
-
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: #000; /* fundo preto */
-      color: #fff;
-      font-family: 'Raleway', sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 40px;
-      font-weight: 700;
-      margin-bottom: 50px;
-    }
-
-    /* Caixa roxa fina */
-    .button-box {
-      border: 2px solid #6a0dad;
-      border-radius: 20px;
-      padding: 25px 20px;
-      max-width: 320px;
-      width: 90%;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-
-    .btn {
-      border: 1px solid #6a0dad;
-      background: transparent;
-      color: #fff;
-      padding: 12px;
-      border-radius: 10px;
-      font-weight: 500;
-      font-size: 15px;
-      text-decoration: none;
-      transition: 0.3s;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-    }
-
-    .btn:hover {
-      background: #6a0dad;
-      color: #fff;
-    }
-
-    footer {
-      margin-top: 40px;
-      font-size: 13px;
-      color: #aaa;
-    }
-
-    footer span {
-      font-weight: 600;
-      color: #fff;
-    }
-  </style>
+  <meta name="description" content="Maria Eduarda — links oficiais" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <main class="page">
+    <header class="top">
+      <h1 class="brand">Maria Eduarda</h1>
+    </header>
 
-  <h1>Maria Eduarda</h1>
+    <section class="card" role="region" aria-label="Painel de links principal">
+      <div class="avatar-wrap">
+        <!-- placeholder image -->
+        <img src="img/placeholder.jpg" alt="Maria Eduarda" class="avatar">
+      </div>
 
-  <div class="button-box">
-    <a href="https://t.me/dudinhaavipsbot" target="_blank" class="btn">🚀 Entrar no VIP</a>
-    <a href="https://t.me/dudamariax" target="_blank" class="btn">👀 Grupo de Prévia</a>
-    <a href="https://dudasecrets.github.io/Maria-Eduarda-VIP/" target="_blank" class="btn">🌐 Website Oficial</a>
-  </div>
+      <nav class="links" aria-label="Links principais">
+        <!-- Telegram VIP -->
+        <a class="btn btn-primary" id="btn-vip" href="https://t.me/dudinhaavipsbot" target="_blank" rel="noopener noreferrer"
+           aria-label="Abrir Telegram VIP">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M21 3L3 10l4.5 1.6L19 5.5 12 16z" fill="currentColor"/>
+          </svg>
+          <span>Telegram VIP</span>
+        </a>
 
-  <footer>
-    <span>Maria Eduarda</span> © 2025 — Todos os direitos reservados
-  </footer>
+        <!-- Website Oficial -->
+        <a class="btn btn-white" id="btn-site" href="https://dudasecrets.github.io/Maria-Eduarda-VIP/" target="_blank" rel="noopener noreferrer"
+           aria-label="Abrir Website Oficial">
+          <svg class="icon heart" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M12 21s-7-4.35-9-6.54C-0.8 10.7 3 5 8 7.5 10 3 16 3 16 3s5 0 7 4.5c5 2.5 8.8-3.2 5-7.96C19 1 12 9 12 21z" fill="currentColor"/>
+          </svg>
+          <span>Website Oficial</span>
+        </a>
 
+        <!-- Telegram GRÁTIS -->
+        <a class="btn btn-secondary" id="btn-free" href="https://t.me/dudamariax" target="_blank" rel="noopener noreferrer"
+           aria-label="Abrir Telegram grátis">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M21 3L3 10l4.5 1.6L19 5.5 12 16z" fill="currentColor"/>
+          </svg>
+          <span>Telegram GRÁTIS</span>
+        </a>
+      </nav>
+    </section>
+
+    <footer class="footer">
+      <small>Maria Eduarda ©️ 2025</small>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
 </body>
 </html>
