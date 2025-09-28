@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Payment • Isabella Torres VIP</title>
+  <style>
+    :root{
+      --bg:#000;
+      --card:#111;
+      --pink1:#c437ff;
+      --pink2:#ff79e6;
+      --accent:#7ad0ff;
+      --muted:#bdbfc3;
+      --white:#ffffff;
+      --radius:14px;
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{
+      font-family:'Poppins',sans-serif;
+      background:var(--bg);
+      color:var(--white);
+      padding:20px;
+    }
+    body::before{
+      content:"";
+      position:fixed;
+      top:0;left:0;right:0;height:280px;
+      background:radial-gradient(circle at top center, rgba(196,55,255,.35), transparent 70%);
+      z-index:-1;
+    }
+    .container{max-width:720px;margin:auto}
+    .card{
+      background:var(--card);
+      padding:24px;
+      border-radius:var(--radius);
+      box-shadow:0 12px 40px rgba(0,0,0,.6);
+    }
+    header{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:18px}
+    .logo{
+      width:58px;height:58px;border-radius:12px;
+      background:linear-gradient(135deg,var(--pink1),var(--pink2));
+      display:flex;align-items:center;justify-content:center;
+      font-weight:800;color:#111;font-size:18px;
+    }
+    h1{margin:0;font-size:20px;color:var(--pink2)}
+    .lead{color:var(--muted);font-size:14px;margin-top:4px}
+    .alert{
+      background:#1a1a1a;border:1px solid #333;
+      padding:12px;border-radius:10px;margin-top:12px;
+      color:#ffb3d9;font-size:14px;text-align:center;
+    }
+    .panel{
+      background:#0b0b0b;padding:16px;border-radius:12px;margin-top:16px;
+      text-align:center;
+    }
+    .btn{
+      display:inline-flex;align-items:center;gap:6px;
+      background:linear-gradient(90deg,var(--pink1),var(--pink2));
+      color:#111;border:0;padding:12px 18px;
+      border-radius:10px;font-weight:800;cursor:pointer;
+      text-decoration:none;
+      transition:.25s;
+    }
+    .btn:hover{transform:translateY(-3px);}
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <header>
+      <div class="logo">VIP</div>
+      <div>
+        <h1>Isabella Torres VIP</h1>
+        <p class="lead">Monthly plan only <b>$9.99</b>. Secure payment via Stripe.</p>
+      </div>
+    </header>
+
+    <div class="alert">⚡ Click below to complete your payment securely with card, Apple Pay, or Google Pay.</div>
+
+    <div class="panel">
+      <a href="https://buy.stripe.com/aFacN71lc9QmaKN7NS5Vu04" target="_blank" class="btn">💳 Pay Now with Stripe</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
